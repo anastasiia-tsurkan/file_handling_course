@@ -1,0 +1,5 @@
+phone 25 20000
+laptop 10 15000
+tablet 15 10000
+e-book 20 5000
+headphones 50 3000
