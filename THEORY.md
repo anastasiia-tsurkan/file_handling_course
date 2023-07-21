@@ -64,7 +64,7 @@ print(file.read(10)) # Hello, wor
 
 file.close()
 ```
-To read file line by line need to create loop and use ```readline()``` or ```readlines()``` methods. 
+To read file line by line, need to create loop and use ```readline()``` or ```readlines()``` methods. 
 The ```readline()``` method return a line string and ```readlines()``` return list of all lines.
 ```text
 file = open("greetings.txt", "r")
@@ -214,7 +214,7 @@ with ContextManager() as manager:
 Output:
 ![img_4.png](img_4.png)
 
-Now, lets implement custom File manager. 
+Now, let's implement a custom File manager. 
 ```text
 class CustomFileManager:
     def __init__(self, filename, mode):
@@ -230,7 +230,7 @@ class CustomFileManager:
         print("Exception has been handled")
         self.file.close()
 ```
-Let`s try to handle exception inside ```with``` statement.
+Let's try to handle exception inside ```with``` statement.
 ```text
 with CustomFileManager("greetings.txt", "r") as file:
     1 // 0

@@ -37,13 +37,9 @@ def open_file(name, mode):
 
 
 if __name__ == '__main__':
-    with ContextManager() as manager:
-        print("with statement block")
 
-    with CustomFileManager("greetings.txt", "r") as file:
-        1 // 0
+    with open_file("greetings.txt", "r") as file:
         print(file.read())
         print(file.closed)
 
     print(file.closed)
-    print(type(open_file))
